@@ -186,3 +186,78 @@ footer nav ul {
 	margin: 2em
 }
 
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 5px 5px 5px;
+}
+.btn {
+	background-color: white;
+	border-radius: 15px 15px 15px 15px;
+	border: 1px solid#1D6154;
+	color: #1D6154;
+
+}
+
+.btn:hover {
+color: white;
+background-color: #1D6154;
+}
+
+.btn:focus {
+	color: white;
+	background-color: #1D6154;
+}
+
+/* devrais-je utiliser js pour rendre btnlogin dynamique ou simuler est ok ? */
+
+.btnlogin{ 
+	font-weight: bolder;
+}
+
+#logIn {
+		width: 25%;
+		margin: auto;
+}
+
+#logIn > * {
+	text-align: center;
+
+}
+#logIn h2{
+	margin-bottom: 20px;
+}
+#logIn form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+
+#logIn input {
+	height: 50px;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+#logIn label {
+	margin: 2em 0 1em 0;
+}
+#logIn textarea {
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+
+.txtcontainer{
+	text-align: center;
+}
+.mdpForgot {
+	display: inline-block;
+} 
+.mdpForgot:hover{
+	border-bottom: 1px solid black;
+} 
+
+
