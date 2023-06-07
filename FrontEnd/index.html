@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script type='module' src="index.js"></script>
+	<script src="https://kit.fontawesome.com/9d609b1277.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="blackTopBar">
+		<i class="fa-regular fa-pen-to-square iconTopBar"></i>
+		<p class="textTopBar">Mode édition</p>
+		<button class="buttonTopBar largeButton">Publier les changements</button>
+	</div>
+<header>
+	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+	<nav>
+		<ul>
+			<li>projets</li>
+			<li>contact</li>
+			<li id="btnLogin">login</li>
+			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<section id="introduction">
+		<figure>
+			<img src="./assets/images/sophie-bluel.png" alt="">
+			<div class="modification">
+				<i class="fa-regular fa-pen-to-square modificationIcon"></i> 
+				<p class="modificationText">modifié</p>
+		</div>
+		</figure>
+		<article>
+			<h2>Designer d'espace</h2>
+			<p>Je raconte votre histoire, je valorise vos idées. Je vous accompagne de la conception à la livraison finale du chantier.</p>
+			<p>Chaque projet sera étudié en commun, de façon à mettre en valeur les volumes, les matières et les couleurs dans le respect de l’esprit des lieux et le choix adapté des matériaux. Le suivi du chantier sera assuré dans le souci du détail, le respect du planning et du budget.</p>
+			<p>En cas de besoin, une équipe pluridisciplinaire peut-être constituée : architecte DPLG, décorateur(trice)</p>
+		</article>
+	</section>
+	<section id="portfolio">
+		<div class="myProject">
+		<h2>Mes Projets</h2>
+		<!-- trigger/open modal -->
+		<button class="myProjectTxtIcon" id="modalBtn">
+		<i class="fa-regular fa-pen-to-square modificationIcon"></i> 
+		<p class="modificationText">modifié</p>
+		</button>
+		<!-- trigger/open modal -->
+	<!-- the Modal -->
+	
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modalContent">
+				<div class="modalHeader">
+					<span class="close">&times;</span>
+					<h3>Galerie photo</h3>
+				  </div>
+				  <div class="modalBody">
+
+				  </div>
+				  <div class="modalFooter">
+					<button class="addPicture" id="btnAddPicture">Ajouter une photo</button>
+					<button class="deletePicture">Supprimez la galerie</button>
+				  </div>
+
+			</div>
+			<!-- Modal content -->
+		</div>
+	<!-- the Modal -->
+
+		<!-- the second Modal -->
+
+	<div id="mySecondModal" class="secondModal">
+		<div class="secondModalContent">
+	<div class="secondModalHeader" id="secondModalHeader">
+		<span class="close">&times;</span>
+		<h3>Ajout Photo</h3>
+	  </div>
+	  <div class="secondModalBody" id="secondModalBody">
+
+		<div class="addingFile">
+			<div id="previewContainer"></div>
+			<i class="fa-regular fa-image fa-xl"></i>
+			<label for="myFile" id="btnAdd">+ Ajouter photo</label>
+			<input type="file" id="myFile" accept="image/jpeg, image/png">
+			<p class="info">jpg, png : 4mo max </p>
+		</div>
+		<div class="titleForm">
+			<label for="title" class="label">Titre</label>
+			<input type="text" class="labelModal" id="title" name="title">	
+		</div>
+		<div class="categoryForm">
+			<label for="categorySelect" class="label">Catégorie</label>
+			<select  id="categorySelect">
+				<option value=""></option>
+				<option value="1">Objets</option>
+				<option value="2">Appartements</option>
+				<option value="3">Hotels & restaurants</option>
+			</select>
+		</div>
+		  
+	  </div>
+	  <div class="secondModalFooter" id="secondModalFooter">
+		<button class="validate" id="validate">Valider</button>
+	  </div>
+	</div>
+	</div>
+	<!-- the second Modal -->
+		</div>
+		<div class="buttons"id="buttons">
+			<button class="btn btn-all" id="btn-all" >Tous</button>
+			<button class="btn btn-objet" id="btn-objet">Objets</button>
+			<button class="btn btn-appartments" id="btn-appartments">Appartements</button>
+			<button class="btn btn-hotelrestaurant" id="btn-hotelrestaurant">Hôtel & restaurants</button>
+		</div>
+		<div class="gallery" id="gallery" >
+		</div>
+	</section>
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Vous avez un projet ? Discutons-en !</p>
+		<form action="#" method="post">
+			<label for="name">Nom</label>
+			<input type="text" name="name" id="name">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="message">Message</label>
+			<textarea name="message" id="message" cols="30" rows="10"></textarea>
+			<input type="submit" value="Envoyer">
+		</form>
+	</section>
+</main>
+<footer>
+	<nav>
+		<ul>
+			<li>Mentions Légales</li>
+		</ul>
+	</nav>
+</footer>
+</body>
+</html>
