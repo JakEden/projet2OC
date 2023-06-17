@@ -259,5 +259,277 @@ background-color: #1D6154;
 .mdpForgot:hover{
 	border-bottom: 1px solid black;
 } 
+.blackTopBar{
+	display:none;
+	justify-content:center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	background-color: black;
+	
+}
+.iconTopBar {
+	margin-top: 14px;
+}
+.textTopBar {
+	margin-top: 14px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.buttonTopBar {
+	border-radius: 25px;
+	background-color: white;
+	border-color: white;
+	box-shadow: none;
+	border-style: solid;
+}
+.largeButton{
+	padding: 10px 10px 10px 10px;
+}
+.modification {
+	display: none;
+}
+.myProject{
+	display: flex;
+	justify-content: center;
+}
+.myProjectTxtIcon {
+	display: none;
+
+}
+.modificationIcon{
+	margin: 10px 5px 0 55px;
+}
+.modificationText{
+	margin: 10px 0 0 0;
+}
+
+#modalBtn{
+	border: none;
+	background-color: white;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 0; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modalContent {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%;
+	height: 100%;
+	overflow: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+	margin-top: -20px;
+	color: #000000;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #5b5b5b;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  h3{
+	text-align: center;
+	margin: 50px 0 75px 0;
+	font-weight: bold;
+	font-size: 26px;
+  }
+  .modalBody{
+	width: 100%;
+	margin: 0 50px 0 50px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+  }
+
+  .modalFooter {
+	margin:100px 100px 100px 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	border-top: 3px solid grey;
+  }
+
+  .addPicture{
+	width: 230px;
+	height: 36px;
+	background-color: #1D6154;
+	color: white;
+	border-radius: 25px;
+	border-color: #1D6154;
+	border-style: solid;
+  }
+  .deletePicture{
+	margin-top: 20px;
+	font-size: 16px;
+	border: none;
+	color: #B1663C;
+	background-color: white;
+  }
+ .deletePicture:hover{
+	border-bottom: 1px solid #B1663C;
+ }
 
 
+  
+  .modalBody .imageContainer {
+	position: relative;
+	flex: 0 0 15%; /* Adjust the width of each image container as desired */
+	padding: 10px; /* Adjust the spacing between images as desired */
+  }
+  
+  .modalBody .imageContainer img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+  .modalBody .imageContainer i {
+	position: absolute;
+	top: 30px;
+	right: 25px;
+	transform: translate(50%, -50%);
+	background-color: rgba(0, 0, 0, 1);
+	color: rgb(255, 255, 255);
+	padding: 5px;
+	border-radius: 50%;
+  }
+
+
+
+  .secondModal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 0; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .secondModalContent {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%;
+	height: 100%;
+	overflow: auto;
+  }
+  
+  .secondModalBody{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+  }
+.addingFile{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 30px;
+	background-color: #E8F1F6;
+	height: 150px;
+	width: 450px;
+}
+.addingFile i{
+margin-top: 40px;
+ font-size: 60px;
+ color: #b9c5cc;
+}
+
+.previewInfoContainer {
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-bottom: 20px;
+background-color: #E8F1F6;
+height: 170px;
+width: 450px;
+}
+
+
+.info {
+	margin-bottom: 10px;
+}
+ 
+#btnAdd {
+	color: #306685;
+	background-color: #CBD6DC;
+	margin-top: 40px;
+	border-radius: 25px;
+	padding: 10px;
+	font-size: 14px;
+	
+  }
+  #myFile {
+	visibility: hidden;
+  }
+
+.labelModal{
+	margin-bottom: 30px;
+	width: 450px;
+	height: 35px;
+}
+  .titleForm label {
+	display: block;
+  }
+  .categoryForm label {
+	display:block;
+  }
+  .secondModalFooter{
+	margin:100px 100px 100px 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	border-top: 1px solid grey;
+  }
+  .validate{
+	width: 230px;
+	height: 36px;
+	background-color: #A7A7A7;
+	color: white;
+	border-radius: 25px;
+	border-color: #A7A7A7;
+	border-style: solid;
+  }
+  #categorySelect {
+	margin-bottom: 30px;
+	width: 458px;
+	height: 41px;
+  }
+  .previewContainer{
+	width: 200px;
+
+  }
