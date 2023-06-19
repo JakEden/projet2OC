@@ -80,7 +80,7 @@ const storageData = localStorage.getItem("idToken");
 const tokenObj = JSON.parse(storageData);
 const token = tokenObj.token;
 
-if (localStorage.getItem("idToken") !== '{"message":"user not found"}') {
+if (localStorage.getItem("idToken") !== '{"message":"user not found"}' || null) {
   const blackTopBar = document.querySelector(".blackTopBar");
   const modification = document.querySelector(".modification");
   const myProjectTxtIcon = document.querySelector(".myProjectTxtIcon");
