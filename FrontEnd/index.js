@@ -80,7 +80,7 @@ const storageData = localStorage.getItem("idToken");
 const tokenObj = JSON.parse(storageData);
 const token = tokenObj.token;
 
-if (localStorage.getItem("idToken") !== null) {
+if (localStorage.getItem("idToken") !== '{"message":"user not found"}') {
   const blackTopBar = document.querySelector(".blackTopBar");
   const modification = document.querySelector(".modification");
   const myProjectTxtIcon = document.querySelector(".myProjectTxtIcon");
@@ -114,7 +114,6 @@ function modalGallery() {
 
 async function deleteImage(imageId) {
   const accessToken = token;
-
   await fetch(`http://localhost:5678/api/works/${imageId}`, {
     method: "DELETE",
     headers: {
