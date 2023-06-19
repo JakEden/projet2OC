@@ -180,19 +180,23 @@ modalBtn.addEventListener("click", () => {
 // When the user clicks on <span> (x), close the modal
 span.addEventListener("click", () => {
   modal.style.display = "none";
+  functionAll();
 });
 // When the user clicks on <span> (x), close the second modal
 secondSpan.addEventListener("click", () => {
   secondModal.style.display = "none";
   previewContainer.innerHTML = "";
+  functionAll();
 });
 
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";
+    functionAll();
   } else if (event.target === secondModal) {
     secondModal.style.display = "none";
+    functionAll();
   }
 });
 
@@ -310,7 +314,7 @@ validateButton.addEventListener("click", async function () {
           const previewContainer = document.querySelector(".previewContainer");
           previewContainer.innerHTML = "";
           previewInfoContainer.style.display = "flex";
-          // Clear the previewFile variablecd
+          // Clear the previewFile variable
           previewFile = undefined;
         } else {
           console.log("Échec de la publication de l'image");
